@@ -6,6 +6,12 @@ class Car
     private $color;
     private $year;
 
+    public function __construct($color, $year)
+    {
+        $this->color = $color;
+        $this->year = $year;
+    }
+    
     public function run()
     {
         return 'Car is running...' . PHP_EOL;
@@ -47,13 +53,20 @@ class Car
     {
         return $this->year. PHP_EOL;
     }
+
+    public function __destruct()
+    {
+        print 'Removing object ' . __CLASS__ . PHP_EOL;
+    }
 }
 
-$car = new Car();
+$car = new Car('Green', 2010);
+$car2 = new Car('Blue', 1994);
 
-$car->setColor('Red');
+//$car->setColor('Red');
 echo $car->getColor();
-$car->setYear(1995);
-echo $car->getYear();
-echo $car->run();
-echo $car->stop();
+echo $car2->getYear();
+//$car->setYear(1995);
+//echo $car->getYear();
+//echo $car->run();
+//echo $car->stop();
