@@ -1,0 +1,22 @@
+{
+    "name": "williamtome/php-oo-fundamentos",
+    "authors": [
+        {
+            "name": "William Tomé",
+            "email": "william.tomenh@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
