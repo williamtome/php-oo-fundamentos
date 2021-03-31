@@ -1,8 +1,11 @@
 <?php
 
-use Monolog\Handler\StreamHandler;
-use Monolog\Logger;
-use App\Matematica\Basico;
+use App\Foto\Upload;
+
+use Monolog\{
+    Handler\StreamHandler,
+    Logger
+};
 
 require 'vendor/autoload.php';
 
@@ -12,5 +15,5 @@ $log->pushHandler(new StreamHandler('./logs/teste.txt', Logger::INFO));
 $log->info('LOG DE TESTE...');
 $log->error('ERRO NO SISTEMA!!!');
 
-$mat = new Basico();
-echo $mat->somar(10,20);
+$up = new Upload();
+echo $up->run('teste.png');
