@@ -1,6 +1,6 @@
 <?php
 
-namespace Matematica\Equacoes;
+namespace App\Matematica\Equacoes;
 
 class PrimeiroGrau
 {

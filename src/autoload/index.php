@@ -2,9 +2,9 @@
 
 require 'autoload.php';
 
-use \Matematica\Basico;
-use \Foto\Upload;
-use Matematica\Equacoes\PrimeiroGrau;
+use App\Matematica\Basico;
+use App\Foto\Upload;
+use App\Matematica\Equacoes\PrimeiroGrau;
 
 $m = new Basico();
 
