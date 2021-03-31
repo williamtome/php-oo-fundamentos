@@ -2,7 +2,9 @@
 
 namespace App\Foto;
 
-class Download
+use App\Contract\Storage;
+
+class Download implements Storage
 {
     public function run($path)
     {

@@ -2,7 +2,9 @@
 
 namespace App\Foto;
 
-class Upload
+use App\Contract\Storage;
+
+class Upload implements Storage
 {
     public function run($path)
     {
