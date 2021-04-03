@@ -7,8 +7,10 @@ use Code\Sum;
 try {
     
     $sum = new Sum();
-    echo $sum->doSum(10); //30
+    echo $sum->doSum(5, 20); //30
     
 } catch (\Error $e) {
+    echo $e->getMessage();
+} catch (\InvalidArgumentException $e) {
     echo $e->getMessage();
 }
