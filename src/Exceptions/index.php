@@ -15,4 +15,6 @@ try {
     *echo $e->getMessage();
 }*/ catch (\Code\Exceptions\MyCustomExceptions $e) {
     echo $e->getMessage();
+} finally {
+    echo 'Finally...';
 }
